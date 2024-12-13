@@ -95,3 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(currentSlide); 
     startAutoSlide(); 
 });
+
+// Accessibility: Handle sidebar toggle with keyboard focus
+document.addEventListener("keydown", (event) => {
+    const sidebar = document.querySelector(".sidebar");
+    if (event.key === "Escape" && sidebar.classList.contains("open")) {
+        toggleSidebar();
+    }
+});
+
