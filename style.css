@@ -1,4 +1,4 @@
-
+   
 
 
 *{
@@ -1079,3 +1079,17 @@ margin-bottom: 10%;
 }
 
     
+
+a:focus, button:focus, .toggle-icon:focus, .close-btn:focus {
+    outline: 3px solid #FFA500; 
+    outline-offset: 2px;
+}
+
+
+body {
+    color: #222; 
+}
+
+.navbar a:hover, .navbar a:focus {
+    color: #000;
+}
